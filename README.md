@@ -7,7 +7,12 @@ Calculating how much power will be consumed by our system is a very important ta
 
 # Parts list
 
-# Power Consumption Data
+# Power Consumption
+  Methods
+  
+  Optimal Methods
+  
+  Data
 
 
 
