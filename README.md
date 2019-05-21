@@ -34,6 +34,26 @@ We were able to analyze this video to get some decent data on the power consumpt
 
 
 
+# Solar panel 
+This part of the project is very unique each stations needs due to where they would be implemented. The things we needed to consider when selecting our solar panel were:
+* Lack of sunlight for 10 weeks - The solar power must be able to collect enough power from the sun when it is available in order to fully recharge the battery for when there is no sunlight again. We believed off of our own intuition that any solar panel that had could produce 50 Watts or greater would be good enough. 
+* Extreme wind - with extreme wind we would need to make sure that we minimize the surface area that the solar panel has so that it does not act as a sail and eventually destroy the whole station. This again is something worth tailoring towards a specific project and should be calculated considering the conditions of the location where the station is going. 
+* Remote area - since we plan to put our solar panel in a remote area which is not only hard to get to but also very expensive we want to ensure that our entire system can work without ever having to revisit the site. This impacted our solar panel decision because we want to ensure that the panel will be functional for several years without having to go and replace the battery. 
+We researched many different options and finally settled on ordering a 100 W and 12V solar panel made by Solartech. (https://www.mrsolar.com/solartech-spm100p-ts-f-100w-12v-solar-panel-w-large-j-box/) However, when this solar panel arrived we realized that it was too large and would act as sail. We have not yet figured out the replacement yet but we are leaning towards getting a panel that only provides around 50 Watts of power. The reason why is because when we have light, we will have light all day. In other words, when the light comes out we will have no problem charging the battery. 
+
+
+
+# Charge controller
+The charge controller is a very important part of the entire system as it drops down the voltage from the 12V battery to the 5V current that the Raspberry Pi runs off of. The charge controller also makes sure that the solar panel does not back drain the battery at night when there is no sunlight being absorbed by the panel. 
+
+An inherent flaw of all charge controllers is that there is some energy loss in the process of dropping the voltage from 12V to 5V. However, there are two different types of charge controllers, PWM and MPPT. MPPT is known to be substantially better at conserving energy than PWM but MPPT is also substantially more expensive. We also could not find any charge controllers that would be suitable for a remote weather station as they are all designed for industrial grade solar panels (over 200 Watts). 
+
+We decided to get the following PWM charge controller and it was the best option based on both price and efficiency. 
+
+Charge Controller: https://www.amazon.com/PowMr-60a-Charge-Controller-Adjustable/dp/B07KW4DHX6/ref=sr_1_2?keywords=powmr+60a+charge+controller&qid=1556820017&s=electronics&sr=8-2 
+
+
+
 
 
 
