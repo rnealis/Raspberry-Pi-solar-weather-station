@@ -16,6 +16,14 @@ Calculating how much power will be consumed by our system is a very important ta
 We were able to analyze this video to get some decent data on the power consumption of the Raspberry Pi by slowing the video down to get the current and voltage as a function of time on the stopwatch. 
 * **Watching current on DC function generator** - Due to the lack of sophistication of the previous method, we ran the trial again however this time including the ammeter that is present of our DC function generator to confirm the readings that we were getting.  
 * **USB Ammeter** - The last irritation that we used was a USB Ammeter to read our results.
+
+  Item | Link
+  -----|------
+  DMM|https://www.fluke-direct.com/product/fluke-115-digital-multimeter-with-true-rms?gclid=EAIaIQobChMI4pDFkues4gIVg4CfCh3lTgCsEAAYASAAEgJIRPD_BwE 
+  DC Function Generator |https://www.circuitspecialists.com/csi3005sm.html 
+  USB Ammeter| https://www.amazon.com/Digital-Multimeter-Ammeter-Voltmeter-Capacity/dp/B00YRSV3J8 
+  Stop Watch and Camera | Cell Phone
+  
   
   ## Optimal Methods
   
