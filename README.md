@@ -1,4 +1,4 @@
-# Raspberry-Pi-solar-weather-station
+# Raspberry Pi Solar Weather Station
 
 # Description
 The objective of this project is to build a weather station that could be placed in a remote polar environment and will be able to function for several years without any need for maintenance or data retrieval. The solar panel will charge a series of large car batteries that will be used to power a Raspberry Pi that will retrieve and transmit data collected from various climate sensors.
@@ -6,6 +6,10 @@ The objective of this project is to build a weather station that could be placed
 Calculating how much power will be consumed by our system is a very important task so that we can provide the system with enough power to last through the dark winter of the polar environment. This task consumed most of our time and therefore the following page will outline the power consumption of a Raspberry Pi under different conditions.
 
 # Parts list
+
+Item | Link
+-|-
+
 
 # Power Consumption
   ## Methods
@@ -31,6 +35,18 @@ We were able to analyze this video to get some decent data on the power consumpt
   
   
   ## Data
+
+
+# Sensors
+
+Here are just a few sensors that we used in our project that we thought worked really well and were super reliable
+
+
+Sensor Name | Purpose | Link
+------------|---------|-----
+DS18B20 | Ground temperature sensors that can have different lengths for different depths | https://www.adafruit.com/product/381
+BME680 | Gas, Humidity, Pressure, Temperature Sensor I²C, SPI Output | https://www.digikey.com/product-detail/en/bosch-sensortec/BME680/828-1077-1-ND/7401321?utm_adgroup=Sensors%20&%20Transducers
+MCP9808 | Extremely accurate temperature sensor | https://www.digikey.com/en/product-highlight/m/microchip-technology/mcp9808-silicon-temp-sensor?utm_adgroup=Integrated%20Circuits&slid=&gclid=EAIaIQobChMIr7ej-aCt4gIVEUgNCh25HgnxEAAYASAAEgJKzvD_BwE
 
 
 
