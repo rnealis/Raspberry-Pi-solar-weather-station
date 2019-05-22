@@ -46,7 +46,8 @@ We were able to analyze this video to get some decent data on the power consumpt
   Stop Watch and Camera | Cell Phone
   
  **Summary of Visual Methods** 
- These are all great ways to easily measure the power consumption of a Raspberry Pi or something similar as the procedure only includes equipment that are commonly found in electronics labs. The method requires minimal technical skills and can be replicated in the most basic electronics lab. Although this method is very easy to do and provides some good data for the power consumption, it relies on actually going back through a video to retrieve the data. Since we wanted to test the power consumption of the Raspberry Pi under various conditions we wanted to create a method that would allow us to repeat the process quickly as well as get more accurate data. For this reason, we decided to explore using a digital multimeter chip that fits into our circuit which would give us something close to the instantaneous power consumption. 
+
+These are all great ways to easily measure the power consumption of a Raspberry Pi or something similar as the procedure only includes equipment that are commonly found in electronics labs. The method requires minimal technical skills and can be replicated in the most basic electronics lab. Although this method is very easy to do and provides some good data for the power consumption, it relies on actually going back through a video to retrieve the data. Since we wanted to test the power consumption of the Raspberry Pi under various conditions we wanted to create a method that would allow us to repeat the process quickly as well as get more accurate data. For this reason, we decided to explore using a digital multimeter chip that fits into our circuit which would give us something close to the instantaneous power consumption. 
  
  
   ## Digital Method
@@ -198,7 +199,61 @@ We decided to get the following PWM charge controller and it was the best option
 
 Charge Controller: https://www.amazon.com/PowMr-60a-Charge-Controller-Adjustable/dp/B07KW4DHX6/ref=sr_1_2?keywords=powmr+60a+charge+controller&qid=1556820017&s=electronics&sr=8-2 
 
+# Transmission and storage of data
 
+	This weather station is meant to be autonomous, we are trying to avoid the inconvenience of traveling to collect data from the weather station. In order to solve this problem, we use a cellular transmission module. While we do plan on transmitting the data, we also plan on storing a copy of the data onboard. While we have not finalized the data transmission and storage algorithms, the next paragraph outlines our plans and contains the beginnings of our code for this process. 
+  
+	First, a cron job triggers the collection of data from sensors at regular intervals. These data are stored on two separate csv files. The first file is a “storage” file and will keep the data. The second file is a “buffer” file that will cue the data for transmission. On an interval less frequent than the data collection, a cron job will operate a python script to read the buffer file to a numerical python array and then clear the buffer file. From the python array, we will transmit the data in chunks that are optimal for energy efficiency. Using the Linux operating system module, we will be able to confirm when the chunks have been sent or if the chunks have failed to send. All of the chunks that have failed to send will be written back to the “buffer” csv file and all of the chunks that sent successfully will be deleted. Below, is the beginning of our code to operate this process. Note that this is not operational code, it is only meant for inspiration in thinking of ways to effectively transmit data. 
+
+```
+# initial run to set up
+import csv
+
+#initial content storage
+with open('storage.csv','w') as f:
+    f.write('date, sensordata\n')
+
+#initial content buffer
+with open('buffer.csv','w') as f:
+    f.write('date, sensordata\n')
+
+x = 'somethingwithadate'
+y = 'somethingwithsensors'
+
+# appends to the CSV
+
+# storgae
+with open('storage.csv','a',newline='') as f:
+    writer=csv.writer(f)
+    writer.writerow([x,y])
+
+# buffer
+with open('buffer.csv','a',newline='') as f:
+    writer=csv.writer(f)
+    writer.writerow([x,y])
+
+import numpy as np
+import os
+sendout = np.genfromtxt('buffer.csv',delimiter=',')
+# this clears the csv file
+filename = "buffer.csv"
+f = open(filename, "w+")
+f.close()
+
+statusarray = np.zeros(len(sendout))
+# transmit the number of lines required
+# if the linux output returns "sent," then mark the status array as sent 
+# once we have run through all of the chunks, return the unsent data to the buffer
+
+
+# here is the syntax for reading a line on the linux output
+import subprocess
+
+cmd="pwd"
+cmd_output = subprocess.check_output(cmd, shell=True)
+print (cmd_output)
+
+```
 
 
 
