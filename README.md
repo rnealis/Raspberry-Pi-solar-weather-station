@@ -6,7 +6,7 @@
    - [Digital Power Consumption](#digital-method)
    - [Conclussions about Power Consumption](#conclusion-about-power-consumption)
 3. [Sensors](#sensors)
-4. [Solar Panels](#solar-panels)
+4. [Solar Panel](#solar-panel)
 5. [Charge Controler](#charge-controler)
 6. [Transmission and Storage of Data](#transmission-and-storgae-of-data)
 7. [Resources](#resources)
