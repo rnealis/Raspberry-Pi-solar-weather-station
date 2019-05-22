@@ -103,8 +103,8 @@ Test | Sensors | Transmitting | Bluetooth | WIFI | HDMI | Monitor | Average Powe
 Charge Controller | NO | NO | NO | YES | NO | NO | 934.47 mW
 
 
-Item         | Measurement
--------------|------------
+Item | Measurement
+-----|------------
 WIFI Transmission (frequency = 1 per minute) | ~33 mW
 Idle Pi | Unknown
 Bluetooth | ~17 mW
