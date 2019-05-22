@@ -34,6 +34,63 @@ We were able to analyze this video to get some decent data on the power consumpt
   ## Optimal Methods
   *The method that we used to collect the most accurate data on the power consumption of a Rapsberry revolved around using an INA 219 chip. Below we will outline how we went about utilizing this piece of technology to gather the power consumption of a Raspberry Pi under several differnt conditions.*
   
+  ### Set Up
+  Insert Picture Here of scematic and INA 219
+  
+  The INA219 is a high side DC current, voltage and power sensor that is rated to be accurate within 1%. We set up the INA219 sensor by appropriately connecting the sensor to a raspberry pi (see link below) and using a DC function generator.
+  
+  The Raspberry Pi that you are testing must be powered through the GPIO pins. The Raspberry Pi that you are using to collect data can be powered through the micro USB power port. 
+  
+  ### Procedure
+  * Using Python scripts, we were able to record data every second regarding voltage, power and current. 
+  * Once we collected the data, we used Excel macros to plot the power consumption of the device over time. 
+  * We also used Excel to find the average power consumption of the Raspberry Pi while under multiple scenarios. Using these scenarios, we approximated the power consumption of the individual parts of the Raspberry Pi below. 
+  
+  
+  The python script that we used on the Raspberry Pi were we collected the data was:
+```
+import os
+import socket
+import datetime
+import time
+from ina219 import INA219
+from time import sleep
+
+# READ VOLTAGE, CURRENT, AND POWER
+ina = INA219(shunt_ohms= 0.1,
+                          max_expected_amps =0.6,
+                          address=0x40)
+
+ina.configure(voltage_range=ina.RANGE_16V,
+                            gain=ina.GAIN_AUTO,
+                            bus_adc=ina.ADC_128SAMP,
+                            shunt_adc=ina.ADC_128SAMP)
+
+#print ('voltage:', v)
+#print ('current:', i)
+#print ('power:', p)
+
+print ("voltage (V), current (mA), power (mW)")
+
+while True:
+    # GET DATE AND TIME
+    now = datetime.datetime.now()
+    time = now.strftime("%Y-%m-%d %H:%M:%S")
+    time = str.replace(time,' ','%20')
+    
+    v = ina.voltage()
+    i = ina.current()
+    p = ina.power()
+
+    print (time, v, i, p)
+    sleep(1)
+
+```
+  
+  
+  
+  
+  
   
   
   ## Data
