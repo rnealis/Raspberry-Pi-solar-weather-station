@@ -36,6 +36,7 @@ We were able to analyze this video to get some decent data on the power consumpt
   
   ### Set Up
   ![Screen Shot 2019-05-22 at 10 11 48 AM](https://user-images.githubusercontent.com/50841778/58184376-fb93c600-7c7e-11e9-85fa-e6e8cc17b5d7.jpeg)
+  !<img width="539" alt="Screen Shot 2019-05-22 at 10 50 13 AM" src="https://user-images.githubusercontent.com/50841778/58184860-ea978480-7c7f-11e9-8b8f-3712f8f106e8.png">
   
   
   
