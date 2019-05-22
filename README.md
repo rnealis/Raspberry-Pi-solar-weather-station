@@ -13,10 +13,21 @@ Calculating how much power will be consumed by our system is a very important ta
 
 Item | Link
 -----|-----
-
+INA219 | http://www.ti.com/lit/ds/symlink/ina219.pdf
+Raspberry Pi Zero W | https://www.raspberrypi.org/products/raspberry-pi-zero-w/
+Wifi or Cellular Transmission Module | https://www.newegg.com/comfast-cf-wu720n-usb-2-0/p/0XM-000R-00009
+DC Function Generator | https://www.circuitspecialists.com/csi3005sm.html 
+Digital Multimeter (DMM) | https://www.fluke-direct.com/product/fluke-115-digital-multimeter-with-true-rms?gclid=EAIaIQobChMI4pDFkues4gIVg4CfCh3lTgCsEAAYASAAEgJIRPD_BwE 
+USB Ammeter | https://www.amazon.com/Digital-Multimeter-Ammeter-Voltmeter-Capacity/dp/B00YRSV3J8
+Sensors | See sensor section
+Breadboard |
+Stop Watch and Camera | 
+Spare Wires | 
 
 
 # Power Consumption
+
+*The power consumption of the Raspberry Pi is extremely important because we are running on a finite battery. Furthermore, as we plan to operate this weather station in the arctic circle, there will be a significant amount of time when we receive no sunlight to recharge the battery.*
   ## Methods
   
  *Measuring the instantaneous current that the Raspberry Pi draws was a very difficult task and we started in very basic places and progressively built up our method.*
