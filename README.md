@@ -55,16 +55,24 @@ We were able to analyze this video to get some decent data on the power consumpt
   ![Screen Shot 2019-05-22 at 10 11 48 AM](https://user-images.githubusercontent.com/50841778/58184376-fb93c600-7c7e-11e9-85fa-e6e8cc17b5d7.jpeg)
   <img width="539" alt="Screen Shot 2019-05-22 at 10 50 13 AM" src="https://user-images.githubusercontent.com/50841778/58184860-ea978480-7c7f-11e9-8b8f-3712f8f106e8.png">
   
-  
-  
   The INA219 is a high side DC current, voltage and power sensor that is rated to be accurate within 1%. We set up the INA219 sensor by appropriately connecting the sensor to a raspberry pi (see link below) and using a DC function generator.
   
   The Raspberry Pi that you are testing must be powered through the GPIO pins. The Raspberry Pi that you are using to collect data can be powered through the micro USB power port. 
   
+  _**THE INA219/RECORDING PI MUST SHARE THE GROUND AS THE TESTING PI IN ORDER TO RECIEVE ACCURATE DATA**_
+  
+  
   ### Procedure
-  * Using Python scripts, we were able to record data every second regarding voltage, power and current. 
-  * Once we collected the data, we used Excel macros to plot the power consumption of the device over time. 
-  * We also used Excel to find the average power consumption of the Raspberry Pi while under multiple scenarios. Using these scenarios, we approximated the power consumption of the individual parts of the Raspberry Pi below. 
+  1. We first set up the the circuit outlined in the step above but started with the DC power generator turned off so now power was going to the Testing Pi. 
+  2. Turned on the Recording Pi and then initiated the python script provided to begin reading out the power consumption data
+  3. Turn on the DC function generator to provide power to the Testing Pi side to the circuit
+  4. Wait as the data gets printed out from the python script
+  5. IF TESTING FOR THE POWER CONSUMPTION WITH SENSORS initiate a script that makes the sensors take measurements
+  6. After a period of time, send the Testing Pi a command to shutdown 
+  7. Once we collected the data off of the terminal, we used Excel macros to plot the power consumption of the device over time.
+
+*We also used Excel to find the average power consumption of the Raspberry Pi while under multiple scenarios. Using these scenarios, we approximated the power consumption of the individual parts of the Raspberry Pi below.*
+
   
   
   The python script that we used on the Raspberry Pi were we collected the data was:
