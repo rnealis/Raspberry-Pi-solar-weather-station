@@ -5,7 +5,9 @@ The objective of this project is to build a weather station that could be placed
 
 Calculating how much power will be consumed by our system is a very important task so that we can provide the system with enough power to last through the dark winter of the polar environment. This task consumed most of our time and therefore the following page will outline the power consumption of a Raspberry Pi under different conditions.
 
+![Screen Shot 2019-05-22 at 10 11 27 AM](https://user-images.githubusercontent.com/50841778/58185089-5d086480-7c80-11e9-9cdc-851f69083c28.jpeg)
 
+**The image above is a shcematic of what our circut looks like with all of its components**
 
 # Parts list
 
