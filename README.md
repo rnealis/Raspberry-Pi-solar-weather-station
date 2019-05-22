@@ -261,17 +261,17 @@ print (cmd_output)
 
 Resource Description | Resource Link
 ---------------------|--------------
-Solar Charge Controller | https://www.youtube.com/watch?v=KPZhtGLfGn4 \\ https://www.youtube.com/watch?v=kF_cVEYxj3E
-INA219 wiring and coding | https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/python-circuitpython <b> https://www.rototron.info/raspberry-pi-ina219-tutorial/ 
-Testing the depletion of batteries using an Arduino and an INA219 | https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/wiring <b> https://www.youtube.com/watch?v=9LoMsYSCWTw <b> https://www.raspberrypi.org/forums/viewtopic.php?t=41849 <b> https://raspberrypi.stackexchange.com/questions/13886/how-to-know-how-much-battery-power-is-remaining 
-Testing the power up and power down of a raspberry pi | http://raspi.tv/2013/controlled-shutdown-duration-test-of-pi-model-a-with-2-cell-lipo <b> https://github.com/kmcallister/rpi-battery-monitor
+Solar Charge Controller | https://www.youtube.com/watch?v=KPZhtGLfGn4 <br/> https://www.youtube.com/watch?v=kF_cVEYxj3E
+INA219 wiring and coding | https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/python-circuitpython <br/> https://www.rototron.info/raspberry-pi-ina219-tutorial/ 
+Testing the depletion of batteries using an Arduino and an INA219 | https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/wiring <br/> https://www.youtube.com/watch?v=9LoMsYSCWTw <br/> https://www.raspberrypi.org/forums/viewtopic.php?t=41849 <br/> https://raspberrypi.stackexchange.com/questions/13886/how-to-know-how-much-battery-power-is-remaining 
+Testing the power up and power down of a raspberry pi | http://raspi.tv/2013/controlled-shutdown-duration-test-of-pi-model-a-with-2-cell-lipo <br/> https://github.com/kmcallister/rpi-battery-monitor
 Managing low battery levels | https://github.com/aboudou/picheckvoltage 
-Another weather station project that has been completed using a raspberry pi | https://projects.raspberrypi.org/en/projects/build-your-own-weather-station/10 <b> https://www.instructables.com/id/Raspberry-Pi-Solar-Weather-Station/ <b> https://www.raspberrypi.org/blog/build-your-own-weather-station/
+Another weather station project that has been completed using a raspberry pi | https://projects.raspberrypi.org/en/projects/build-your-own-weather-station/10 <br/> https://www.instructables.com/id/Raspberry-Pi-Solar-Weather-Station/ <br/> https://www.raspberrypi.org/blog/build-your-own-weather-station/
 Temperature sensor description | https://www.youtube.com/watch?time_continue=212&v=j7LLVkPpQ78
-Turning off bluetooth | https://scribles.net/disabling-bluetooth-on-raspberry-pi/ <b> http://blog.mmone.de/2017/05/16/raspberry-pi-zero-w-disable-bluetooth/
+Turning off bluetooth | https://scribles.net/disabling-bluetooth-on-raspberry-pi/ <br/> http://blog.mmone.de/2017/05/16/raspberry-pi-zero-w-disable-bluetooth/
 Turning off HDMI | https://github.com/geerlingguy/raspberry-pi-dramble/issues/58
 Turning off LED | https://www.jeffgeerling.com/blogs/jeff-geerling/controlling-pwr-act-leds-raspberry-pi
-General power consumption  | https://www.jeffgeerling.com/blogs/jeff-geerling/raspberry-pi-zero-conserve-energy <b> https://raspberry-projects.com/pi/pi-hardware/raspberry-pi-zero/minimising-power-consumption <b> https://learn.pi-supply.com/make/how-to-save-power-on-your-raspberry-pi/#throttle-cpu <b> https://learn.pi-supply.com/make/how-to-save-power-on-your-raspberry-pi/#throttle-cpu
+General power consumption  | https://www.jeffgeerling.com/blogs/jeff-geerling/raspberry-pi-zero-conserve-energy <br/> https://raspberry-projects.com/pi/pi-hardware/raspberry-pi-zero/minimising-power-consumption <br/> https://learn.pi-supply.com/make/how-to-save-power-on-your-raspberry-pi/#throttle-cpu <br/> https://learn.pi-supply.com/make/how-to-save-power-on-your-raspberry-pi/#throttle-cpu
 Cron jobs | https://www.ostechnix.com/a-beginners-guide-to-cron-jobs/		
 
 
