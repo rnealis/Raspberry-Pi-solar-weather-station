@@ -103,6 +103,16 @@ Test | Sensors | Transmitting | Bluetooth | WIFI | HDMI | Monitor | Average Powe
 Charge Controller | NO | NO | NO | YES | NO | NO | 934.47 mW
 
 
+Item | Measurement
+-----|------------
+WIFI Transmission (frequency = 1 per minute) | ~33 mW
+Idle Pi | Unknown
+Bluetooth | ~17 mW
+HDMI | ~72 mW
+WIFI | Unknown
+4 Sensors | 46~ mW
+Efficiency of Charge Controller | System with the charge controller consumes 78% more energy than the system alone. Note: the 78% will likely change with power input to the charge controller (my hunch is if you put more power into the charge controller, you will get less power loss)
+
 
 # Sensors
 
