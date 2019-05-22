@@ -35,7 +35,7 @@ We were able to analyze this video to get some decent data on the power consumpt
  **Summary** - These are all great ways to easily measure the power consumption of a Raspberry Pi or something similar as the procedure only includes equipment that are commonly found in electronics labs. The method requires minimal technical skills and can be replicated in the most basic electronics lab. Although this method is very easy to do and provides some good data for the power consumption, it relies on actually going back through a video to retrieve the data. Since we wanted to test the power consumption of the Raspberry Pi under various conditions we wanted to create a method that would allow us to repeat the process quickly as well as get more accurate data. For this reason, we decided to explore using a digital multimeter chip that fits into our circuit which would give us something close to the instantaneous power consumption. 
  
  
-  ## Optimal Methods
+  ## Optimal Method
   *The method that we used to collect the most accurate data on the power consumption of a Rapsberry revolved around using an INA 219 chip. Below we will outline how we went about utilizing this piece of technology to gather the power consumption of a Raspberry Pi under several differnt conditions.*
   
   ### Set Up
@@ -138,7 +138,7 @@ Efficiency of Charge Controller | System with the charge controller consumes 78%
   
   ![Screen Shot 2019-05-22 at 10 11 27 AM](https://user-images.githubusercontent.com/50841778/58185555-51696d80-7c81-11e9-8e96-6764f2a391bc.jpeg) 
   
-  **Batteries
+  **Batteries**
   
   We are operating on the assumption that the deep cycle marine batteries that we can purchase in Svalbard will be 100 Ah. We attached an Excel model that can tell us how many batteries we need based on a variety of exogenous variables. These variables include frequency of data collection, idle power consumption of the aruidino, power consumption of the cellular transmission, energy loss from the charge controller and more.
   
