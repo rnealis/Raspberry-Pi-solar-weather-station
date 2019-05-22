@@ -1,5 +1,5 @@
 # Raspberry Pi Solar Weather Station
-
+ 
 ## Table of Contents
 1. [Parts List](#parts-list)
 2. [Power Consumption](#power-consumption)
@@ -67,7 +67,9 @@ These are all great ways to easily measure the power consumption of a Raspberry 
   
   ### Set Up
   ![Screen Shot 2019-05-22 at 10 11 48 AM](https://user-images.githubusercontent.com/50841778/58184376-fb93c600-7c7e-11e9-85fa-e6e8cc17b5d7.jpeg)
-  <img width="539" alt="Screen Shot 2019-05-22 at 10 50 13 AM" src="https://user-images.githubusercontent.com/50841778/58184860-ea978480-7c7f-11e9-8b8f-3712f8f106e8.png">
+  <p align="center">
+   <img width="539" alt="Screen Shot 2019-05-22 at 10 50 13 AM" src="https://user-images.githubusercontent.com/50841778/58184860-ea978480-7c7f-11e9-8b8f-3712f8f106e8.png">
+   </p>
   
   The INA219 is a high side DC current, voltage and power sensor that is rated to be accurate within 1%. We set up the INA219 sensor by appropriately connecting the sensor to a raspberry pi (see link below) and using a DC function generator.
   
