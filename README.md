@@ -35,7 +35,7 @@ We were able to analyze this video to get some decent data on the power consumpt
   *The method that we used to collect the most accurate data on the power consumption of a Rapsberry revolved around using an INA 219 chip. Below we will outline how we went about utilizing this piece of technology to gather the power consumption of a Raspberry Pi under several differnt conditions.*
   
   ### Set Up
-  Insert Picture Here of scematic and INA 219
+  ![Skematic of collecting circuit](https://imgur.com/a/eYBFixW)
   
   The INA219 is a high side DC current, voltage and power sensor that is rated to be accurate within 1%. We set up the INA219 sensor by appropriately connecting the sensor to a raspberry pi (see link below) and using a DC function generator.
   
