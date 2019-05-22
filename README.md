@@ -1,6 +1,8 @@
 # Raspberry Pi Solar Weather Station
 ## Table of Contents
-1. [Parts List] (#parts-list)
+1. [Parts List](#parts-list)
+2. [Power Consumption](#power-consumption)
+   - [Digital Power Consumption](#digital-method)
 # Description
 The objective of this project is to build a weather station that could be placed in a remote polar environment and will be able to function for several years without any need for maintenance or data retrieval. The solar panel will charge a series of large car batteries that will be used to power a Raspberry Pi that will retrieve and transmit data collected from various climate sensors.
 
