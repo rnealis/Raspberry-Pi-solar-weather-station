@@ -19,6 +19,7 @@ Wifi or Cellular Transmission Module | https://www.newegg.com/comfast-cf-wu720n-
 DC Function Generator | https://www.circuitspecialists.com/csi3005sm.html 
 Digital Multimeter (DMM) | https://www.fluke-direct.com/product/fluke-115-digital-multimeter-with-true-rms?gclid=EAIaIQobChMI4pDFkues4gIVg4CfCh3lTgCsEAAYASAAEgJIRPD_BwE 
 USB Ammeter | https://www.amazon.com/Digital-Multimeter-Ammeter-Voltmeter-Capacity/dp/B00YRSV3J8
+Charge Controller | https://www.amazon.com/PowMr-60a-Charge-Controller-Adjustable/dp/B07KW4DHX6/ref=sr_1_2?keywords=powmr+60a+charge+controller&qid=1556820017&s=electronics&sr=8-2 
 Sensors | See sensor section
 Breadboard |
 Stop Watch and Camera | 
