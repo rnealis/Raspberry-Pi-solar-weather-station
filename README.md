@@ -9,7 +9,7 @@ Calculating how much power will be consumed by our system is a very important ta
 
 **The image above is a very basic shcematic of what our circut looks like with all of its components**
 
-# Parts list
+# Parts List
 
 Item | Link
 -----|-----
@@ -147,7 +147,7 @@ Efficiency of Charge Controller | System with the charge controller consumes 78%
 
 ## Conclusion about Power Consumption
   
-  **Power usage**
+  **Power Usage**
   
   After running the initial tests, we decided that it may be impractical to leave the Raspberry Pi on at all times. As Svalbard has approximately 12 weeks of darkness, we determined that only 1 deep cycle marine battery does not have enough capacity to power the idle pi, regular data collection and regular data transmission.
   
@@ -180,7 +180,7 @@ MCP9808 | Extremely accurate temperature sensor | https://www.digikey.com/en/pro
 
 
 
-# Solar panel 
+# Solar Panel 
 This part of the project is very unique each stations needs due to where they would be implemented. The things we needed to consider when selecting our solar panel were:
 * Lack of sunlight for 10 weeks - The solar power must be able to collect enough power from the sun when it is available in order to fully recharge the battery for when there is no sunlight again. We believed off of our own intuition that any solar panel that had could produce 50 Watts or greater would be good enough. 
 * Extreme wind - with extreme wind we would need to make sure that we minimize the surface area that the solar panel has so that it does not act as a sail and eventually destroy the whole station. This again is something worth tailoring towards a specific project and should be calculated considering the conditions of the location where the station is going. 
@@ -190,7 +190,7 @@ We researched many different options and finally settled on ordering a 100 W and
 
 
 
-# Charge controller
+# Charge Controller
 The charge controller is a very important part of the entire system as it drops down the voltage from the 12V battery to the 5V current that the Raspberry Pi runs off of. The charge controller also makes sure that the solar panel does not back drain the battery at night when there is no sunlight being absorbed by the panel. 
 
 An inherent flaw of all charge controllers is that there is some energy loss in the process of dropping the voltage from 12V to 5V. However, there are two different types of charge controllers, PWM and MPPT. MPPT is known to be substantially better at conserving energy than PWM but MPPT is also substantially more expensive. We also could not find any charge controllers that would be suitable for a remote weather station as they are all designed for industrial grade solar panels (over 200 Watts). 
@@ -199,7 +199,7 @@ We decided to get the following PWM charge controller and it was the best option
 
 Charge Controller: https://www.amazon.com/PowMr-60a-Charge-Controller-Adjustable/dp/B07KW4DHX6/ref=sr_1_2?keywords=powmr+60a+charge+controller&qid=1556820017&s=electronics&sr=8-2 
 
-# Transmission and storage of data
+# Transmission and Storage of Data
 
 This weather station is meant to be autonomous, we are trying to avoid the inconvenience of traveling to collect data from the weather station. In order to solve this problem, we use a cellular transmission module. While we do plan on transmitting the data, we also plan on storing a copy of the data onboard. While we have not finalized the data transmission and storage algorithms, the next paragraph outlines our plans and contains the beginnings of our code for this process. 
   
@@ -261,7 +261,7 @@ print (cmd_output)
 
 Resource Description | Resource Link
 ---------------------|--------------
-Solar Charge Controller | https://www.youtube.com/watch?v=KPZhtGLfGn4 <b> https://www.youtube.com/watch?v=kF_cVEYxj3E
+Solar Charge Controller | https://www.youtube.com/watch?v=KPZhtGLfGn4 \\ https://www.youtube.com/watch?v=kF_cVEYxj3E
 INA219 wiring and coding | https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/python-circuitpython <b> https://www.rototron.info/raspberry-pi-ina219-tutorial/ 
 Testing the depletion of batteries using an Arduino and an INA219 | https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/wiring <b> https://www.youtube.com/watch?v=9LoMsYSCWTw <b> https://www.raspberrypi.org/forums/viewtopic.php?t=41849 <b> https://raspberrypi.stackexchange.com/questions/13886/how-to-know-how-much-battery-power-is-remaining 
 Testing the power up and power down of a raspberry pi | http://raspi.tv/2013/controlled-shutdown-duration-test-of-pi-model-a-with-2-cell-lipo <b> https://github.com/kmcallister/rpi-battery-monitor
