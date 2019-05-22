@@ -32,7 +32,7 @@ We were able to analyze this video to get some decent data on the power consumpt
  
  
   ## Optimal Methods
-  
+  *The method that we used to collect the most accurate data on the power consumption of a Rapsberry revolved around using an INA 219 chip. Below we will outline how we went about utilizing this piece of technology 
   
   ## Data
 
