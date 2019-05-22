@@ -89,7 +89,15 @@ These are all great ways to easily measure the power consumption of a Raspberry 
 
 *We also used Excel to find the average power consumption of the Raspberry Pi while under multiple scenarios. Using these scenarios, we approximated the power consumption of the individual parts of the Raspberry Pi below.*
 
+  *Raspberry Pi features that we tested:*
+  * Wifi
+  * HDMI
+  * Bluetooth
+  * Sensors
+  * Transmitting Data
+  * Connected to a Monitor
   
+  [Turning off Wifi/Bluetooth/HDMI](https://learn.pi-supply.com/make/how-to-save-power-on-your-raspberry-pi/#throttle-cpu)
   
   The python script that we used on the Raspberry Pi were we collected the data was:
 ```
