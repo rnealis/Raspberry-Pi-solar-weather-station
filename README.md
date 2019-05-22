@@ -53,21 +53,6 @@ We were able to analyze this video to get some decent data on the power consumpt
   * Once we collected the data, we used Excel macros to plot the power consumption of the device over time. 
   * We also used Excel to find the average power consumption of the Raspberry Pi while under multiple scenarios. Using these scenarios, we approximated the power consumption of the individual parts of the Raspberry Pi below. 
   
-  ## Conclusion about Power Consumption
-  
-  **Power usage**
-  
-  After running the initial tests, we decided that it may be impractical to leave the Raspberry Pi on at all times. As Svalbard has approximately 12 weeks of darkness, we determined that only 1 deep cycle marine battery does not have enough capacity to power the idle pi, regular data collection and regular data transmission.
-  
-  We decided that turning on and off the station may be dangerous for the pi. The pi takes a few minutes to start up and we would like to collect data at fairly regular intervals. We are also worried about causing damage to the pi or corrupting the SD card through repetitive boot up and shutdown cycles. 
-  
-  This is a judgement call on the behalf of the scientists. Depending on the nature of the weather station, the scientist may need data collected frequently or the scientist may need infrequent data. Also, as seen above, the usage of the sensors does not require a tremendous amount of energy. In our case, we want data fairly frequently as we are studying the permafrost. 
-  
-  This is another judgement call. The purpose of this autonomous weather station is to prevent the scientist or another individual from making regular trips to and from the weather station to collect information. Furthermore, we will be able to get data more regularly through more frequent transmissions. 
-  
-  After looking at our desires for the project and the results of the above power consumption tests, we decided that we may need a system that directs power to am from the raspberry pi. While we have not yet completed this system, we investigated power consumption monitors for the raspberry pi. This power consumption device, an arduino, uses less energy than an idle raspberry pi and can turn on the raspberry pi at regular intervals. A circuit diagram of this setup is included below. 
-  
-  
   
   The python script that we used on the Raspberry Pi were we collected the data was:
 ```
@@ -137,6 +122,27 @@ Efficiency of Charge Controller | System with the charge controller consumes 78%
 
 *FOR MORE DETAILED DATA AND PROJECT DESCRIPTION SEE ATTACHED PDF'S*
 
+## Conclusion about Power Consumption
+  
+  **Power usage**
+  
+  After running the initial tests, we decided that it may be impractical to leave the Raspberry Pi on at all times. As Svalbard has approximately 12 weeks of darkness, we determined that only 1 deep cycle marine battery does not have enough capacity to power the idle pi, regular data collection and regular data transmission.
+  
+  We decided that turning on and off the station may be dangerous for the pi. The pi takes a few minutes to start up and we would like to collect data at fairly regular intervals. We are also worried about causing damage to the pi or corrupting the SD card through repetitive boot up and shutdown cycles. 
+  
+  This is a judgement call on the behalf of the scientists. Depending on the nature of the weather station, the scientist may need data collected frequently or the scientist may need infrequent data. Also, as seen above, the usage of the sensors does not require a tremendous amount of energy. In our case, we want data fairly frequently as we are studying the permafrost. 
+  
+  This is another judgement call. The purpose of this autonomous weather station is to prevent the scientist or another individual from making regular trips to and from the weather station to collect information. Furthermore, we will be able to get data more regularly through more frequent transmissions. 
+  
+  After looking at our desires for the project and the results of the above power consumption tests, we decided that we may need a system that directs power to am from the raspberry pi. While we have not yet completed this system, we investigated power consumption monitors for the raspberry pi. This power consumption device, an arduino, uses less energy than an idle raspberry pi and can turn on the raspberry pi at regular intervals. A circuit diagram of this setup is included below. 
+  
+  ![Screen Shot 2019-05-22 at 10 11 27 AM](https://user-images.githubusercontent.com/50841778/58185555-51696d80-7c81-11e9-8e96-6764f2a391bc.jpeg) 
+  
+  **Batteries
+  
+  We are operating on the assumption that the deep cycle marine batteries that we can purchase in Svalbard will be 100 Ah. We attached an Excel model that can tell us how many batteries we need based on a variety of exogenous variables. These variables include frequency of data collection, idle power consumption of the aruidino, power consumption of the cellular transmission, energy loss from the charge controller and more.
+  
+  Since this project is originating in the United States, we believed it best to purchase the marine deep cycle boat batteries in Svalbard. 
 
 # Sensors
 
