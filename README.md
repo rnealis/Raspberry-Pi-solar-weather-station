@@ -1,8 +1,17 @@
 # Raspberry Pi Solar Weather Station
+
 ## Table of Contents
 1. [Parts List](#parts-list)
 2. [Power Consumption](#power-consumption)
    - [Digital Power Consumption](#digital-method)
+   - [Conclussions about Power Consumption](#conclusion-about-power-consumption)
+3. [Sensors](#sensors)
+4. [Solar Panels](#solar-panels)
+5. [Charge Controler](#charge-controler)
+6. [Transmission and Storage of Data] (#transmission-and-storgae-of-data)
+7. [Resources](#resources)
+
+
 # Description
 The objective of this project is to build a weather station that could be placed in a remote polar environment and will be able to function for several years without any need for maintenance or data retrieval. The solar panel will charge a series of large car batteries that will be used to power a Raspberry Pi that will retrieve and transmit data collected from various climate sensors.
 
@@ -194,6 +203,7 @@ We researched many different options and finally settled on ordering a 100 W and
 
 
 # Charge Controller
+
 The charge controller is a very important part of the entire system as it drops down the voltage from the 12V battery to the 5V current that the Raspberry Pi runs off of. The charge controller also makes sure that the solar panel does not back drain the battery at night when there is no sunlight being absorbed by the panel. 
 
 An inherent flaw of all charge controllers is that there is some energy loss in the process of dropping the voltage from 12V to 5V. However, there are two different types of charge controllers, PWM and MPPT. MPPT is known to be substantially better at conserving energy than PWM but MPPT is also substantially more expensive. We also could not find any charge controllers that would be suitable for a remote weather station as they are all designed for industrial grade solar panels (over 200 Watts). 
