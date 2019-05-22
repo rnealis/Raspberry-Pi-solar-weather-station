@@ -88,12 +88,20 @@ while True:
 ```
   
   
-  
-  
-  
-  
-  
   ## Data
+  
+  
+Test | Sensors (in or out) | Transmitting? | Bluetooth | WIFI | HDMI | Monitor? | Average Power Consumption
+-----|---------------------|---------------|-----------|------|------|----------|--------------------------
+1 | IN | NO | YES | YES | YES | NO | 558.60 mW
+2 | IN | YES | YES | YES | YES | NO | 601.30 mW
+3 | IN | NO | NO | YES | YES | NO | 551.50 mW
+4 | IN | YES | NO | YES | YES | NO | 574.61 mW
+5 | OUT | NO| NO | YES | YES | NO | 597.43 mW
+6 | OUT | NO | NO | YES | NO | NO | 525.02 mW
+6 | OUT | NO | NO | NO | YES | YES | 852.95 mW
+Charge Controller | OUT | NO | NO | YES | NO | NO | 934.47 mW
+
 
 
 # Sensors
