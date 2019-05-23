@@ -17,6 +17,8 @@ The objective of this project is to build a weather station that could be placed
 
 Calculating how much power will be consumed by our system is a very important task so that we can provide the system with enough power to last through the dark winter of the polar environment. This task consumed most of our time and therefore the following page will outline the power consumption of a Raspberry Pi under different conditions.
 
+This project was a part completed as a part of one of Bates Colleges Electronics courses. 
+
 ![Screen Shot 2019-05-22 at 10 12 10 AM](https://user-images.githubusercontent.com/50841778/58185280-c6887300-7c80-11e9-95bb-53747f5a6755.jpeg)
 
 **The image above is a very basic shcematic of what our circut looks like with all of its components**
@@ -168,6 +170,13 @@ Efficiency of Charge Controller | System with the charge controller consumes 78%
 *FOR MORE DETAILED DATA AND PROJECT DESCRIPTION SEE ATTACHED PDF'S AND EXCEL SPREADSHEET'S*
 
 ## Conclusion about Power Consumption
+  **Noise in the Data**
+
+When we measured data using the INA219, we noticed a lot of noise in the power consumption of the Raspberry Pi 0 w. However, when we measured the the power consumption of the Raspberry Pi 0 with the DMM, we did not notice such  oscillations. Through testing a variety of operations, we were unable to determine where the noise came from. However, we anticipate that the noise came from something in the operating system. The difference in power measurement techniques (INA219 versus filming the DMM) and the difference in the noise between the Pi 0 and the Pi 0 w is something that is worth further investigation. 
+
+
+When we measured data using the INA219, we noticed a lot of noise in the power consumption of the Raspberry Pi 0 w. However, when we measured the the power consumption of the Raspberry Pi 0 with the DMM, we did not notice such  oscillations. Through testing a variety of operations, we were unable to determine where the noise came from. However, we anticipate that the noise came from something in the operating system. The difference in power measurement techniques (INA219 versus filming the DMM) and the difference in the noise between the Pi 0 and the Pi 0 w is something that is worth further investigation. 
+
   
   **Power Usage**
   
