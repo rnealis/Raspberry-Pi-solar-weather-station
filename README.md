@@ -173,10 +173,6 @@ Efficiency of Charge Controller | System with the charge controller consumes 78%
   **Noise in the Data**
 
 When we measured data using the INA219, we noticed a lot of noise in the power consumption of the Raspberry Pi 0 w. However, when we measured the the power consumption of the Raspberry Pi 0 with the DMM, we did not notice such  oscillations. Through testing a variety of operations, we were unable to determine where the noise came from. However, we anticipate that the noise came from something in the operating system. The difference in power measurement techniques (INA219 versus filming the DMM) and the difference in the noise between the Pi 0 and the Pi 0 w is something that is worth further investigation. 
-
-
-When we measured data using the INA219, we noticed a lot of noise in the power consumption of the Raspberry Pi 0 w. However, when we measured the the power consumption of the Raspberry Pi 0 with the DMM, we did not notice such  oscillations. Through testing a variety of operations, we were unable to determine where the noise came from. However, we anticipate that the noise came from something in the operating system. The difference in power measurement techniques (INA219 versus filming the DMM) and the difference in the noise between the Pi 0 and the Pi 0 w is something that is worth further investigation. 
-
   
   **Power Usage**
   
